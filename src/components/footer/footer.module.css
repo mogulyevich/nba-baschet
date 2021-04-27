@@ -1,0 +1,28 @@
+.container {
+  background-color: #051c2d;
+  width: 100vw;
+  color: white;
+  padding-top: 2rem;
+}
+
+.columns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80%;
+  font-size: 0.9rem;
+  column-gap: 10rem;
+}
+
+hr {
+  color: white;
+  width: 90%;
+  margin-top: 0;
+}
+
+@media (max-width: 800px) {
+  .columns {
+    flex-direction: column;
+    margin-right: 2rem;
+  }
+}

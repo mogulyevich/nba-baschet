@@ -1,0 +1,39 @@
+.logoContainer {
+  margin-left: 20vw;
+  margin-top: 0.4rem;
+}
+
+.logoContainer span {
+  font-family: "Anton", sans-serif;
+  text-transform: uppercase;
+  font-size: 2.2rem;
+}
+
+.icon {
+  font-size: 2.4rem;
+  margin-right: 0.6rem;
+}
+
+@media (max-width: 800px) {
+  .logoContainer {
+    margin-top: 1.7rem;
+    margin-left: 5vw;
+    z-index: 9;
+  }
+}
+
+@media (max-width: 768px) {
+  .logoContainer {
+    margin-top: 1rem;
+    margin-left: 5vw;
+    z-index: 9;
+  }
+}
+
+@media (max-width: 600px) {
+  .logoContainer {
+    margin-top: 0.1rem;
+    margin-left: 5vw;
+    z-index: 9;
+  }
+}

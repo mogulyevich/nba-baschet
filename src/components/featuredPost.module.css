@@ -1,0 +1,118 @@
+.container {
+  background-color: black;
+  width: 100vw;
+  height: 70vh;
+  color: white;
+  display: flex;
+  overflow: hidden;
+}
+
+.imgContainer {
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 1),
+      rgba(0, 0, 0, 0)
+    ),
+    url("../images/minge.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+  flex: 50%;
+}
+
+.container:hover .imgContainer,
+.container:focus .imgContainer {
+  transform: scale(1.2);
+  transition: all 2s ease-in;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  flex: 50%;
+  margin-top: 5%;
+  margin-left: 10rem;
+  z-index: 2;
+}
+
+.content h1 {
+  font-size: 2.2rem;
+}
+
+.content span {
+  font-size: 0.9rem;
+}
+
+.content button {
+  background: transparent;
+  border: 2px solid #fff;
+  border-radius: 18px;
+  padding: 0.5rem 1rem;
+  width: 7rem;
+  color: white;
+  text-transform: uppercase;
+  font-style: 900;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  margin-top: 1.5rem;
+}
+
+.content h3 {
+  text-transform: uppercase;
+  margin-top: 1.5rem;
+}
+
+.content ul {
+  flex-direction: column;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.content li {
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 800px) {
+  .container {
+    flex-direction: column-reverse;
+    height: 70vh;
+  }
+
+  .imgContainer {
+    background-position: top center;
+    background-image: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 1),
+        rgba(0, 0, 0, 0)
+      ),
+      url("../images/minge.jpg");
+  }
+
+  .content {
+    display: flex;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1rem;
+  }
+
+  .content button {
+    margin-top: 0.5rem;
+  }
+
+  .content span {
+    display: none;
+  }
+
+  .content h3 {
+    display: none;
+  }
+
+  .content ul {
+    display: none;
+  }
+}

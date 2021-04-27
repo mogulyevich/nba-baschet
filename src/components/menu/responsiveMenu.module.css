@@ -1,0 +1,21 @@
+.container {
+  background-color: #051c2d;
+  display: flex;
+  color: white;
+  height: 3.8rem;
+  z-index: 6;
+}
+
+@media (max-width: 800px) {
+  .container {
+    position: relative;
+    justify-content: space-between;
+    padding: 0 5vw;
+    height: 8vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    left: 0;
+  }
+}
